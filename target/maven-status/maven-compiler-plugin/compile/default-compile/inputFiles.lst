@@ -1,0 +1,6 @@
+/data/jboss-eap-6.4.0.GA-quickstarts/hibernate4/src/main/java/org/jboss/as/quickstart/hibernate4/data/MemberListProducer.java
+/data/jboss-eap-6.4.0.GA-quickstarts/hibernate4/src/main/java/org/jboss/as/quickstart/hibernate4/controller/MemberController.java
+/data/jboss-eap-6.4.0.GA-quickstarts/hibernate4/src/main/java/org/jboss/as/quickstart/hibernate4/data/MemberRepository.java
+/data/jboss-eap-6.4.0.GA-quickstarts/hibernate4/src/main/java/org/jboss/as/quickstart/hibernate4/service/MemberRegistration.java
+/data/jboss-eap-6.4.0.GA-quickstarts/hibernate4/src/main/java/org/jboss/as/quickstart/hibernate4/model/Member.java
+/data/jboss-eap-6.4.0.GA-quickstarts/hibernate4/src/main/java/org/jboss/as/quickstart/hibernate4/util/Resources.java
