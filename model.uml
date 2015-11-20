@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_95nYsI55EeWJaKBVwjXiWw" name="RootElement">
+  <packagedElement xmi:type="uml:Model" xmi:id="_B2k9gI56EeWJaKBVwjXiWw" name="generated">
+    <packagedElement xmi:type="uml:Package" xmi:id="_B28w8I56EeWJaKBVwjXiWw" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_B29YAI56EeWJaKBVwjXiWw" name="jboss">
+        <packagedElement xmi:type="uml:Package" xmi:id="_B29YAY56EeWJaKBVwjXiWw" name="as">
+          <packagedElement xmi:type="uml:Package" xmi:id="_B29YAo56EeWJaKBVwjXiWw" name="quickstart">
+            <packagedElement xmi:type="uml:Package" xmi:id="_B29YA456EeWJaKBVwjXiWw" name="hibernate4">
+              <packagedElement xmi:type="uml:Package" xmi:id="_B29_EI56EeWJaKBVwjXiWw" name="controller">
+                <packagedElement xmi:type="uml:Class" xmi:id="_B29_EY56EeWJaKBVwjXiWw" name="MemberController" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B2_NMI56EeWJaKBVwjXiWw" name="facesContext" visibility="private" type="_B2-mI456EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B2_0QI56EeWJaKBVwjXiWw" name="memberRegistration" visibility="private" type="_B2_NMo56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3AbUI56EeWJaKBVwjXiWw" name="newMember" visibility="private" type="_B2_0Qo56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_9m62MI8pEeWCuPHMRVWihA" name="member" type="_B2_0Qo56EeWJaKBVwjXiWw" association="_9m4Z8I8pEeWCuPHMRVWihA"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3AbUY56EeWJaKBVwjXiWw" name="getNewMember" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3AbUo56EeWJaKBVwjXiWw" type="_B2_0Qo56EeWJaKBVwjXiWw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3BCYI56EeWJaKBVwjXiWw" name="register" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3BCYY56EeWJaKBVwjXiWw" name="initNewMember" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Bpc456EeWJaKBVwjXiWw" name="getRootErrorMessage" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3CQgY56EeWJaKBVwjXiWw" type="_B3CQgI56EeWJaKBVwjXiWw" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3CQgo56EeWJaKBVwjXiWw" name="e" type="_B3Bpco56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Dependency" xmi:id="_O_z0oI8qEeWCuPHMRVWihA" name="&lt;&lt;call>>" client="_B29_EY56EeWJaKBVwjXiWw" supplier="_B2_NMo56EeWJaKBVwjXiWw"/>
+                <packagedElement xmi:type="uml:Dependency" xmi:id="_ZCokcI8qEeWCuPHMRVWihA" name="&lt;&lt;uses>>" client="_B29_EY56EeWJaKBVwjXiWw" supplier="_B3eVYI56EeWJaKBVwjXiWw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_B2_NMY56EeWJaKBVwjXiWw" name="service">
+                <packagedElement xmi:type="uml:Class" xmi:id="_B2_NMo56EeWJaKBVwjXiWw" name="MemberRegistration" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3b5IY56EeWJaKBVwjXiWw" name="log" visibility="private" type="_B3b5II56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3b5Io56EeWJaKBVwjXiWw" name="em" visibility="private" type="_B3F64I56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3cgMI56EeWJaKBVwjXiWw" name="memberEventSrc" visibility="private" type="_B3b5JY56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3cgMY56EeWJaKBVwjXiWw" name="register" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3cgMo56EeWJaKBVwjXiWw" name="member" type="_B2_0Qo56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_B2_0QY56EeWJaKBVwjXiWw" name="model">
+                <packagedElement xmi:type="uml:Class" xmi:id="_B2_0Qo56EeWJaKBVwjXiWw" name="Member" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3WZkI56EeWJaKBVwjXiWw" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" type="_B3Gh8Y56EeWJaKBVwjXiWw" isUnique="false">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_B3WZkY56EeWJaKBVwjXiWw">
+                      <body> Default value included to remove warning. Remove or modify at will. *</body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3WZko56EeWJaKBVwjXiWw" name="id" visibility="private" type="_B3Gh8Y56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3WZk456EeWJaKBVwjXiWw" name="name" visibility="private" type="_B3CQgI56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3XAoI56EeWJaKBVwjXiWw" name="email" visibility="private" type="_B3CQgI56EeWJaKBVwjXiWw" isUnique="false">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_B3XAoY56EeWJaKBVwjXiWw">
+                      <body> using hibernate4 validators *</body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3XAoo56EeWJaKBVwjXiWw" name="phoneNumber" visibility="private" type="_B3CQgI56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3XAo456EeWJaKBVwjXiWw" name="address" visibility="private" type="_B3CQgI56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_B3VygI56EeWJaKBVwjXiWw" name="Member implements Serializable" client="_B2_0Qo56EeWJaKBVwjXiWw" supplier="_B3TWQI56EeWJaKBVwjXiWw" contract="_B3TWQI56EeWJaKBVwjXiWw"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3XnsI56EeWJaKBVwjXiWw" name="getId" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3XnsY56EeWJaKBVwjXiWw" type="_B3Gh8Y56EeWJaKBVwjXiWw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Xnso56EeWJaKBVwjXiWw" name="setId" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3Xns456EeWJaKBVwjXiWw" name="id" type="_B3Gh8Y56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3XntI56EeWJaKBVwjXiWw" name="getName" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3YOwI56EeWJaKBVwjXiWw" type="_B3CQgI56EeWJaKBVwjXiWw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3YOwY56EeWJaKBVwjXiWw" name="setName" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3YOwo56EeWJaKBVwjXiWw" name="name" type="_B3CQgI56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3YOw456EeWJaKBVwjXiWw" name="getEmail" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3YOxI56EeWJaKBVwjXiWw" type="_B3CQgI56EeWJaKBVwjXiWw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Y10I56EeWJaKBVwjXiWw" name="setEmail" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3Y10Y56EeWJaKBVwjXiWw" name="email" type="_B3CQgI56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Y10o56EeWJaKBVwjXiWw" name="getPhoneNumber" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3Y10456EeWJaKBVwjXiWw" type="_B3CQgI56EeWJaKBVwjXiWw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Y11I56EeWJaKBVwjXiWw" name="setPhoneNumber" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3Zc4I56EeWJaKBVwjXiWw" name="phoneNumber" type="_B3CQgI56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Zc4Y56EeWJaKBVwjXiWw" name="getAddress" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3Zc4o56EeWJaKBVwjXiWw" type="_B3CQgI56EeWJaKBVwjXiWw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Zc4456EeWJaKBVwjXiWw" name="setAddress" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3Zc5I56EeWJaKBVwjXiWw" name="address" type="_B3CQgI56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_B3EswI56EeWJaKBVwjXiWw" name="data">
+                <packagedElement xmi:type="uml:Class" xmi:id="_B3FT0I56EeWJaKBVwjXiWw" name="MemberRepository" visibility="package">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3F64Y56EeWJaKBVwjXiWw" name="em" visibility="private" type="_B3F64I56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Gh8o56EeWJaKBVwjXiWw" name="findById" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3HJAI56EeWJaKBVwjXiWw" type="_B2_0Qo56EeWJaKBVwjXiWw" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3HJAY56EeWJaKBVwjXiWw" name="id" type="_B3Gh8Y56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3HJAo56EeWJaKBVwjXiWw" name="findAllOrderedByName" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3HwEI56EeWJaKBVwjXiWw" type="_B2_0Qo56EeWJaKBVwjXiWw" direction="return">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B3JlQI56EeWJaKBVwjXiWw"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B3KMUI56EeWJaKBVwjXiWw" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_B3NPoI56EeWJaKBVwjXiWw" name="MemberListProducer" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_B3N2sI56EeWJaKBVwjXiWw">
+                    <body>
+ * @author Madhumita Sadhukhan
+ </body>
+                  </ownedComment>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3OdwI56EeWJaKBVwjXiWw" name="memberRepository" visibility="private" type="_B3FT0I56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3OdwY56EeWJaKBVwjXiWw" name="members" visibility="private" type="_B2_0Qo56EeWJaKBVwjXiWw" isUnique="false">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B3Odwo56EeWJaKBVwjXiWw"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B3PE0I56EeWJaKBVwjXiWw" value="*"/>
+                  </ownedAttribute>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3PE0Y56EeWJaKBVwjXiWw" name="getMembers" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3PE0o56EeWJaKBVwjXiWw" type="_B2_0Qo56EeWJaKBVwjXiWw" direction="return">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B3PE0456EeWJaKBVwjXiWw"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B3PE1I56EeWJaKBVwjXiWw" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Pr4I56EeWJaKBVwjXiWw" name="onMemberListChanged" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3Pr4Y56EeWJaKBVwjXiWw" name="member" type="_B2_0Qo56EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3Pr4o56EeWJaKBVwjXiWw" name="retrieveAllMembersOrderedByName" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Dependency" xmi:id="_Qaf0gI8rEeWCuPHMRVWihA" client="_B3NPoI56EeWJaKBVwjXiWw" supplier="_B3FT0I56EeWJaKBVwjXiWw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_B3duUI56EeWJaKBVwjXiWw" name="util">
+                <packagedElement xmi:type="uml:Class" xmi:id="_B3eVYI56EeWJaKBVwjXiWw" name="Resources" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_B3eVYY56EeWJaKBVwjXiWw">
+                    <body>
+ * This class uses CDI to alias Java EE resources, such as the persistence context, to CDI beans
+ * 
+ * &lt;p>
+ * Example injection on a managed bean field:
+ * &lt;/p>
+ * 
+ * &lt;pre>
+ * &amp;#064;Inject
+ * private EntityManager em;
+ * &lt;/pre>
+ </body>
+                  </ownedComment>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_B3e8cI56EeWJaKBVwjXiWw" name="em" visibility="private" type="_B3F64I56EeWJaKBVwjXiWw" isUnique="false"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3e8dI56EeWJaKBVwjXiWw" name="produceLog" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3fjgI56EeWJaKBVwjXiWw" type="_B3b5II56EeWJaKBVwjXiWw" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3gKkI56EeWJaKBVwjXiWw" name="injectionPoint" type="_B3e8c456EeWJaKBVwjXiWw"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_B3gxoI56EeWJaKBVwjXiWw" name="produceFacesContext" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_B3gxoY56EeWJaKBVwjXiWw" type="_B2-mI456EeWJaKBVwjXiWw" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_B2-mII56EeWJaKBVwjXiWw" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_B2-mIY56EeWJaKBVwjXiWw" name="faces">
+        <packagedElement xmi:type="uml:Package" xmi:id="_B2-mIo56EeWJaKBVwjXiWw" name="context">
+          <packagedElement xmi:type="uml:Class" xmi:id="_B2-mI456EeWJaKBVwjXiWw" name="FacesContext"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_B3FT0Y56EeWJaKBVwjXiWw" name="persistence">
+        <packagedElement xmi:type="uml:Class" xmi:id="_B3F64I56EeWJaKBVwjXiWw" name="EntityManager"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_B3b5I456EeWJaKBVwjXiWw" name="enterprise">
+        <packagedElement xmi:type="uml:Package" xmi:id="_B3b5JI56EeWJaKBVwjXiWw" name="event">
+          <packagedElement xmi:type="uml:Class" xmi:id="_B3b5JY56EeWJaKBVwjXiWw" name="Event"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_B3e8cY56EeWJaKBVwjXiWw" name="inject">
+          <packagedElement xmi:type="uml:Package" xmi:id="_B3e8co56EeWJaKBVwjXiWw" name="spi">
+            <packagedElement xmi:type="uml:Class" xmi:id="_B3e8c456EeWJaKBVwjXiWw" name="InjectionPoint"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_B3BCYo56EeWJaKBVwjXiWw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_B3BpcI56EeWJaKBVwjXiWw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_B3BpcY56EeWJaKBVwjXiWw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_B3Bpco56EeWJaKBVwjXiWw" name="Exception"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_B3CQgI56EeWJaKBVwjXiWw" name="String"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_B3SvMI56EeWJaKBVwjXiWw" name="io">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_B3TWQI56EeWJaKBVwjXiWw" name="Serializable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_B3bSEI56EeWJaKBVwjXiWw" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_B3bSEY56EeWJaKBVwjXiWw" name="logging">
+          <packagedElement xmi:type="uml:Class" xmi:id="_B3b5II56EeWJaKBVwjXiWw" name="Logger"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_B3F64o56EeWJaKBVwjXiWw" name="datatype">
+    <packagedElement xmi:type="uml:Package" xmi:id="_B3Gh8I56EeWJaKBVwjXiWw" name="datatype">
+      <packagedElement xmi:type="uml:Class" xmi:id="_B3Gh8Y56EeWJaKBVwjXiWw" name="Long"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9m4Z8I8pEeWCuPHMRVWihA" memberEnd="_9m62MI8pEeWCuPHMRVWihA _9m8EUI8pEeWCuPHMRVWihA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9m5oEI8pEeWCuPHMRVWihA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9m5oEY8pEeWCuPHMRVWihA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9m8EUI8pEeWCuPHMRVWihA" name="membercontroller" type="_B29_EY56EeWJaKBVwjXiWw" association="_9m4Z8I8pEeWCuPHMRVWihA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rwCewI8qEeWCuPHMRVWihA" visibility="package" memberEnd="_rwDF0o8qEeWCuPHMRVWihA _rwDF048qEeWCuPHMRVWihA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rwDF0I8qEeWCuPHMRVWihA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rwDF0Y8qEeWCuPHMRVWihA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rwDF048qEeWCuPHMRVWihA" name="memberlistproducer" type="_B3NPoI56EeWJaKBVwjXiWw" association="_rwCewI8qEeWCuPHMRVWihA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rwDF0o8qEeWCuPHMRVWihA" name="member" type="_B2_0Qo56EeWJaKBVwjXiWw" aggregation="composite" association="_rwCewI8qEeWCuPHMRVWihA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ym7eEI8qEeWCuPHMRVWihA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ym96UI8qEeWCuPHMRVWihA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
