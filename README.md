@@ -1,6 +1,6 @@
 hibernate4: How to Use Hibernate 4 in an Application
 ====================================================
-Author: Madhumita Sadhukhan  
+Author: Kenneth Evensen  
 Level: Intermediate  
 Technologies: Hibernate 4  
 Summary: The `hibernate4` quickstart demonstrates how to use Hibernate ORM 4 over JPA 2.0, using Hibernate-Core and Hibernate Bean Validation, and EJB 3.1.  
